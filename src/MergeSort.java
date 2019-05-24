@@ -53,6 +53,7 @@ public class MergeSort {
     }
     public static void merge_sort(int[] arr,int[] temp,int start,int end){
         if (start<end){
+            //将数组分为两部分
             int m=(start+end)/2;
             merge_sort(arr,temp,start,m);
             merge_sort(arr,temp,m+1,end);
